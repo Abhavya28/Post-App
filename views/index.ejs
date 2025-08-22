@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>All posts</title>
+</head>
+<body>
+    <h1>Post App</h1>
+
+    <% for(post of posts) { %>
+        <div class="div-post">
+            <h3 class="username">@<%=post.username%></h3>
+            <p class="content"><%=post.content%></p>
+        </div>
+    <%} %>
+    
+    <br><br><br>
+
+    <a href="http://localhost:3000/posts/new">Create New Post</a>
+
+</body>
+</html>

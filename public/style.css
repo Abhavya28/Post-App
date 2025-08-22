@@ -1,0 +1,123 @@
+/* Reset defaults */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Body common styling */
+body {
+    background: #f4f6f8;
+    color: #333;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Heading for posts page */
+h1 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* ----------- POSTS PAGE ----------- */
+.div-post {
+    background: #fff;
+    width: 90%;
+    max-width: 600px;
+    margin: 15px 0;
+    padding: 15px 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease-in-out;
+}
+
+.div-post:hover {
+    transform: scale(1.02);
+}
+
+/* Username */
+.username {
+    color: #2980b9;
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+}
+
+/* Post content */
+.content {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #555;
+}
+
+/* Link button (Create new post) */
+a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    text-decoration: none;
+    background: #2980b9;
+    color: white;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+a:hover {
+    background: #1c5f8a;
+}
+
+/* ----------- NEW POST FORM PAGE ----------- */
+form {
+    background: #fff;
+    width: 90%;
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Input and textarea */
+input[type="text"], textarea {
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    transition: border 0.3s ease;
+}
+
+input[type="text"]:focus, textarea:focus {
+    border-color: #2980b9;
+}
+
+textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+/* Submit button */
+button {
+    background: #2980b9;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #1c5f8a;
+}
