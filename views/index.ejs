@@ -13,10 +13,18 @@
         <div class="div-post">
             <h3 class="username">@<%=post.username%></h3>
             <p class="content"><%=post.content%></p>
+            <br><br>
+            <a href="http://localhost:3000/posts/<%=post.id%>">See in detail</a>
+            <a href="/posts/<%= post.id %>/edit">Edit</a>
+
+            <form method="post" action="/posts/<%=post.id%>?_method=DELETE">
+                <button>Delete</button>
+            </form>
+            
         </div>
     <%} %>
     
-    <br><br><br>
+    <br><br>
 
     <a href="http://localhost:3000/posts/new">Create New Post</a>
 
