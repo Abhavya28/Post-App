@@ -12,7 +12,6 @@ app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "views"));
 app.use(express.static(path.join(__dirname, "public")));
 
-// Dummy data
 let posts = [
     {
         id: uuidv4(),
@@ -31,7 +30,6 @@ let posts = [
     }
 ];
 
-// Routes
 
 // Show all posts
 app.get("/posts", (req, res) => {
@@ -85,6 +83,7 @@ app.delete("/posts/:id", (req, res) => {
     posts = posts.filter(p => p.id !== id);
     res.redirect("/posts");
 });
+
 
 // Start server
 app.listen(PORT, () => {
